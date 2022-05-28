@@ -1,18 +1,10 @@
 /*
-    5. Longest Palindromic Substring
-    Given a string s, return the longest palindromic substring in s.
+ * @lc app=leetcode id=5 lang=cpp
+ *
+ * [5] Longest Palindromic Substring
+ */
 
-    https://leetcode.com/problems/longest-palindromic-substring/
-
-    Results: 
-        Runtime: 12 ms, faster than 93.39% of C++ online submissions.
-        Memory Usage: 7.6 MB, less than 70.60% of C++ online submissions.
-*/
-#include <string>
-#include <iostream>
-
-using namespace std;
-
+// @lc code=start
 class Solution 
 {
 public:
@@ -50,14 +42,5 @@ string longestPalindrome(string s)
     return palindrome;
 }
 };
+// @lc code=end
 
-int main(int argc, char const *argv[])
-{
-    Solution sol;
-
-    cout << sol.longestPalindrome(string("babad")) << '\n';
-    cout << sol.longestPalindrome(string("cbbd")) << '\n';
-    cout << sol.longestPalindrome(string("a")) << '\n';
-    cout << sol.longestPalindrome(string("ac")) << '\n';
-    return 0;
-}
